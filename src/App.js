@@ -5,9 +5,9 @@ import {
   Route , 
   Link 
 } from "react-router-dom";
-import Global from "./pages/Global";
 import Indonesia from "./pages/Indonesia";
 import PerProvinsi from "./pages/PerProvinsi";
+import Global from "./pages/Global";
 
 const App =()=> {
   return (
