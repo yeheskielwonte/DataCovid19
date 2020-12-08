@@ -1,6 +1,6 @@
 import React,{Component,useEffect,useState} from "react";
 import axios from "axios";
-import Card from '../Components/Card';
+import CardGlobal from '../Components/CardGlobal';
 
 const Global =()=>{
   const [data,setData] = useState([]);
@@ -10,7 +10,7 @@ const Global =()=>{
       .get('https://covid19.mathdro.id/api')
       .then((response)=> setData(response.data))
   }, []);
-
+console.log(data);
   if (!data.confirmed) {
     return <p>Loading..</p>
   }
@@ -22,7 +22,7 @@ const Global =()=>{
   }
 return(
     <>
-        <Card
+        <CardGlobal
         confirmed={data.confirmed.value}
         recovered={data.recovered.value}
         deaths={data.deaths.value}
