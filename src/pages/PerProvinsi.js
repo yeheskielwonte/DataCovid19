@@ -16,10 +16,10 @@ return (
         data.map((items) => {
             return(
                 <div>
-                    <p>{items.provinsi}</p>
-                    <p>{items.kasusPosi}</p>
-                    <p>{items.kasusSemb}</p>
-                    <p>{items.kasusMeni}</p>
+                    <p>Provinsi : {items.provinsi}</p>,
+                    <p>Positif : {items.kasusPosi}</p>,
+                    <p>Sembuh : {items.kasusSemb}</p>,
+                    <p>Meninggal : {items.kasusMeni}</p>
                 </div>
         )
     })
