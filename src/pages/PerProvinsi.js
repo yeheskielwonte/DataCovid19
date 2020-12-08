@@ -16,6 +16,7 @@ return (
         data.map((items) => {
             return(
                 <div>
+                    <br/>
                     <p>Provinsi : {items.provinsi}</p>
                     <p>Positif : {items.kasusPosi}</p>
                     <p>Sembuh : {items.kasusSemb}</p>
